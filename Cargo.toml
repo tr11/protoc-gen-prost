@@ -11,12 +11,12 @@ members = [
 
 [workspace.dependencies]
 once_cell = "1.10.0"
-pbjson-build = "0.7.0"
-prost = { version = "0.13.1", default-features = false, features = ["std"] }
-prost-build = { version = "0.13.1", default-features = false }
-prost-types = { version = "0.13.1", default-features = false }
+pbjson-build = { version = "0.7.0", git = "https://github.com/tr11/pbjson.git" }
+prost = { version = "0.14.1", default-features = false, features = ["std"] }
+prost-build = { version = "0.14.1", default-features = false }
+prost-types = { version = "0.14.1", default-features = false }
 regex = { version = "1.5.5", default-features = false }
-tonic-build = "0.12.0"
+tonic-build = "0.13.1"
 
 [profile.release]
 codegen-units = 1
